@@ -7,7 +7,7 @@ class Image extends React.Component{
     render(){
         return(
             <div>
-                <img src={this.props.state} alt="hair photo"/>
+                <img src={this.props.state} alt="hair"/>
             </div>
         )
     }
