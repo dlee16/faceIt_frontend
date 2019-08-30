@@ -2,6 +2,7 @@ import React from 'react';
 
 const initialState = {
     name:"",
+    email:"",
     username:"",
     password:""
 }
@@ -31,6 +32,9 @@ class Signup extends React.Component{
             <form onSubmit={this.handleSubmit}>
                 <label>Name:
                     <input onChange={this.handleChange} value={this.state.name} type="text" name="name" placeholder="Enter your name" />
+                </label>
+                <label>Email:
+                    <input onChange={this.handleChange} value={this.state.email} type="text" name="email" placeholder="Enter your email" />
                 </label>
                 <label>Username:
                     <input onChange={this.handleChange} value={this.state.username} type="text" name="username" placeholder="Enter your username" />
