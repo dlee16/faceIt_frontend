@@ -2,17 +2,17 @@ import React from 'react';
 import Image from './Image';
 
 class ImageCard extends React.Component{
-    renderImage =()=> {
-        fetch('http://localhost:3000/images')
-        .then(res => res.json())
-        .then((res) => console.log(res))
-    }
+    // renderImage =()=> {
+    //     fetch('http://localhost:3000/images')
+    //     .then(res => res.json())
+    //     .then((res) => console.log(res))
+    // }
 
     render(){
         return(
             <div>
                 <Image />
-                {this.renderImage()}
+                {/* {this.renderImage()} */}
                 <div id="hairstyles">
                     <button>
                         <img src='../images/womens_brn_long.png' width='100px' height='100px' alt="long hair" />
